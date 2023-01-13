@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap');
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+}
+
 h1, h2 {
     font-family: "Prompt", sans-serif;
     margin-bottom: 0;
@@ -126,8 +136,11 @@ a:hover {
     text-align: center;
     color: white;
     font-size: 12px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+}
+
+.footer,
+.push {
+    height: 50px;
 }
 
 button {
