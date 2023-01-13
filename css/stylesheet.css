@@ -123,14 +123,11 @@ a:hover {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     text-align: center;
     color: white;
     font-size: 12px;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 button {
