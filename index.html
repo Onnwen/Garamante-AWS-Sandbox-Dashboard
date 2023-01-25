@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <title>Garamante Sandbox</title>
+    <link rel="icon" href="favicon.png">
+    <title>Sandbox</title>
 </head>
 <body class="mx-auto">
 <div class="wrapper py-5">
@@ -40,7 +41,7 @@
                 }
                 worksHtml += `<div class="mx-auto workLink">
                     <a href="./works/${work.fileName}/" class="hover-effect">
-                        <h2 class="d-inline-block float-start">${work.title}</h2>
+                        <h2 class="d-inline-block float-start">${work.title.replaceAll("-", " ")}</h2>
                         <div class="float-end">`
                 work.tags.forEach(tag => {
                     worksHtml += `<p class="pod d-inline" style="background: linear-gradient(90deg, ${tag.firstColor} 0%, ${tag.secondColor} 100%);">${tag.name}</p>`
